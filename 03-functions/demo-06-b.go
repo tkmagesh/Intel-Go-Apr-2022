@@ -1,4 +1,4 @@
-/* Higher order functions - pass a function as an argument to another function */
+/* Higher order functions - functions returned as return values */
 package main
 
 import "fmt"
