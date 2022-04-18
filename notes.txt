@@ -67,6 +67,48 @@ go func(){
 
 }()
 
+1. go tools
+2. Visual Studio Code OR goland
+
+To run a go program
+    go run <file_name.go>
+
+To create a build
+    go build <file_name.go>
+    OR
+    go build -o <binary_name> <file_name.go>
+
+Creating builds for different environments (https://go.dev/doc/install/source#environment)
+    GOOS=linux GOARCH=amd64 go build -o <binary_name> <file_name.go>
+    GOOS=darwin GOARCH=amd64 go build -o <binary_name> <file_name.go>
+    GOOS=windows GOARCH=amd64 go build -o <binary_name> <file_name.go>
+    
+To set environment variables
+    go env -w GOOS=windows GOARCH=386
 
 
+Data Types
+    bool
+    string
 
+    int
+    int8
+    int16
+    int32
+    int64
+
+    uint
+    uint8
+    uint16
+    uint32
+    uint64
+
+    float32
+    float64
+
+    complex64 (real [float32] + imaginary [float32])
+    complex128 (real [float64] + imaginary [float64])
+
+    byte (alias for uint8)
+    rune (alias for int32)(unicode code point)
+    
