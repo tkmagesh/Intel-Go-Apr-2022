@@ -140,3 +140,4 @@ Assignment:2
 
 Functions
     1. variadics function
+    2. anonymous functions
