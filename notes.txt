@@ -141,3 +141,7 @@ Assignment:2
 Functions
     1. variadics function
     2. anonymous functions
+    3. higher order functions
+        a. assign a function as a value to a variable
+        b. pass a function as an argument to another function
+        c. return a function from a function
