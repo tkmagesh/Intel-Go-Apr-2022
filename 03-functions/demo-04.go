@@ -25,6 +25,5 @@ func main() {
 	add = func(x, y int) int {
 		return x + y
 	}
-	add = 100
 	fmt.Println(add(100, 200))
 }
