@@ -135,3 +135,8 @@ Assignment:01
         display "Invalid choice" 
         display the menu again.
     
+Assignment:2
+    Refactor the solution for assignemnt:01 using functions in such a way that every function has only one responsibility
+
+Functions
+    1. variadics function
