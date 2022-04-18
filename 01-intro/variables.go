@@ -105,4 +105,52 @@ func main() {
 	x, y, str := 100, 200, "Result of addition = "
 	result := x + y
 	fmt.Println(str, result)
+
+	//constants
+	const pi float32 = 3.14
+
+	//iota
+	/*
+		const (
+			red   = iota
+			green = iota
+			blue  = iota
+		)
+	*/
+
+	/*
+		const (
+			red = iota
+			green
+			blue
+		)
+	*/
+
+	/*
+		const (
+			red = iota + 3
+			green
+			blue
+		)
+	*/
+
+	/*
+		const start = 3
+		const (
+			red = iota + start
+			green
+			_
+			blue
+		)
+	*/
+
+	const (
+		red = iota * 3
+		green
+		blue
+	)
+
+	//fmt.Println("red = ", red, "green = ", green, "blue = ", blue)
+	fmt.Printf("red = %d, green = %d, blue = %d\n", red, green, blue)
+
 }
