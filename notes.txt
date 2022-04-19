@@ -155,5 +155,7 @@ Collections
     Slice
         dynamic size collection of data of the same type
         use 'append' function to add new values
-        
+        use 'make' function to create a slice with preallocated memory
+
     Map
+        collection of key/value pairs
