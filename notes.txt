@@ -159,3 +159,33 @@ Collections
 
     Map
         collection of key/value pairs
+
+Modularity
+    Module (go 1.13)
+        distributable unit of code
+        go.mod file
+            module name
+            targetted go version
+            list of dependencies
+
+        it advicable to have the module name mimicing the repository path
+
+    Package
+        logical grouping of code (within one module)
+
+    Before go 1.13
+        GOPATH
+            bin
+            pkg
+            src
+                github.com
+                    tkmagesh
+                        my-app (pkg)
+                            import "github.com/tkmagesh/my-app/pkg-1"
+
+                            pkg-1
+                            pkg-2
+                    
+    
+    To create a module (go.mod)
+        go mod init <module_name>
