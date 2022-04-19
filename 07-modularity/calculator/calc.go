@@ -1,5 +1,7 @@
 package calculator
 
+import "fmt"
+
 /*
 var opCount int
 
@@ -9,3 +11,7 @@ func OpCount() int {
 */
 
 var OpCount int
+
+func init() {
+	fmt.Println("Calculator package initializing")
+}

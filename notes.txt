@@ -189,3 +189,16 @@ Modularity
     
     To create a module (go.mod)
         go mod init <module_name>
+
+    To install a 3rd party module
+        go get <module_name>
+
+    To update the go.mod file with the dependencies
+        go mod tidy
+
+    To localize the dependencies
+        go mod vendor
+
+    Other useful commands
+        go mod why <module_name>
+        go mod graph
