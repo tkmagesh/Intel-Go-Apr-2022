@@ -145,3 +145,4 @@ Functions
         a. assign a function as a value to a variable
         b. pass a function as an argument to another function
         c. return a function from a function
+    4. deferred functions
