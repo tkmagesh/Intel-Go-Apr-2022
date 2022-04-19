@@ -10,7 +10,11 @@ func main() {
 	//nos := [5]int{3, 2}
 	//nos := [5]int{}
 
-	nos := [5]int{3, 1, 4, 2, 5}
+	nos := [5]int{}
+	for i := 0; i < len(nos); i++ {
+		fmt.Println("enter the value")
+		fmt.Scanln(&nos[i])
+	}
 	fmt.Println(nos)
 
 	fmt.Println("Iterating (using index)")
