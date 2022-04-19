@@ -28,6 +28,10 @@ func main() {
 	fmt.Println("After 10% bonus")
 	ApplyBonus(&emp, 10)
 	fmt.Println(Format(emp))
+
+	e2 := new(Employee)
+	fmt.Printf("%T\n", e2)
+	fmt.Println(e2.Id)
 }
 
 func Format(emp Employee) string {
