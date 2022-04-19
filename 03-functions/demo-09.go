@@ -11,7 +11,7 @@ var DivideByZeroError error = errors.New("divisor cannot be zero")
 func main() {
 	defer func() {
 		if err := recover(); err != nil {
-			fmt.Println("something is wrong. contact the administrator")
+			fmt.Println("something is wrong. contact the administrator.", err)
 			return
 		} else {
 			fmt.Println("Thank you!")
