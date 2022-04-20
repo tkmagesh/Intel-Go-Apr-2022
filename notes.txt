@@ -206,3 +206,8 @@ Modularity
 Interfaces
     Interfaces are implemented implicitly
     Abstractions (interfaces) can be created for types that we dont own
+
+Concurrency
+    DO NOT assume 
+        - the time taken for a goroutine to complete
+        - the sequence of execution of the goroutines
