@@ -44,7 +44,7 @@ Why Go?
         d. No inhertance (only composition)
         e. No pointer arithmetic
         f. No reference type (all types are value types)
-        g. No implicity type conversion
+        g. No implicit type conversion
 
     4. Concurrency
         Ability to have more than one execution path in our application
