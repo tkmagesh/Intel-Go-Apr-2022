@@ -109,6 +109,7 @@ func (products Products) Filter(predicate func(Product) bool) Products {
 	return result
 }
 
+/*
 func (products Products) Sort(attrName string) {
 	switch attrName {
 	case "Id":
@@ -121,6 +122,32 @@ func (products Products) Sort(attrName string) {
 		sort.Sort(ByUnits{products})
 	case "Category":
 		sort.Sort(ByCategory{products})
+	}
+}
+*/
+
+func (products Products) Sort(attrName string) {
+	switch attrName {
+	case "Id":
+		sort.Slice(products, func(i, j int) bool {
+			return products[i].Id < products[j].Id
+		})
+	case "Name":
+		sort.Slice(products, func(i, j int) bool {
+			return products[i].Name < products[j].Name
+		})
+	case "Cost":
+		sort.Slice(products, func(i, j int) bool {
+			return products[i].Cost < products[j].Cost
+		})
+	case "Units":
+		sort.Slice(products, func(i, j int) bool {
+			return products[i].Units < products[j].Units
+		})
+	case "Category":
+		sort.Slice(products, func(i, j int) bool {
+			return products[i].Category < products[j].Category
+		})
 	}
 }
 
