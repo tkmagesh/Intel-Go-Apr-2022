@@ -202,3 +202,7 @@ Modularity
     Other useful commands
         go mod why <module_name>
         go mod graph
+
+Interfaces
+    Interfaces are implemented implicitly
+    Abstractions (interfaces) can be created for types that we dont own
