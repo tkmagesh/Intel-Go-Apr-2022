@@ -231,3 +231,8 @@ Concurrency
 
         receiving data
             data := <- ch
+
+
+Curated list of go libraries & frameworks
+    https://github.com/avelino/awesome-go
+
