@@ -214,3 +214,18 @@ Concurrency
 
     To detect race conditions
         go run -race  demo-05.go 
+
+    Channels
+        1. A "receive" operation is ALWAYS a blocking operation
+        2. A "send" operation can succeed ONLY if a "receive" operation is already initiated (conditions apply)
+            OR
+           A "send" operation is blocked until a "receive" operation is initiated (conditions apply)
+
+        creation
+            ch := make(chan int)
+
+        sending data
+            ch <- 10
+
+        receiving data
+            data := <- ch
