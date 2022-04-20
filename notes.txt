@@ -221,6 +221,8 @@ Concurrency
             OR
            A "send" operation is blocked until a "receive" operation is initiated (conditions apply)
 
+        3. In buffered channels, a "send" operation can succeed even if a 'receive' operation is NOT initiated. The data will be maintained in the buffer.
+
         creation
             ch := make(chan int)
 
